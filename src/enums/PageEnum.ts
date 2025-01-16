@@ -3,5 +3,6 @@ export enum PageEnum {
     HOME = 'HOME',
     MYLEAGUES = 'MYLEAGUES',
     MYROSTER = 'MYROSTER',
-    DATA = 'DATA'
+    DATA = 'DATA',
+    COMPONENTSHOWCASE = 'COMPONENTSHOWCASE'
 }

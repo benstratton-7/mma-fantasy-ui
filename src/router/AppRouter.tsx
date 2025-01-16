@@ -5,6 +5,7 @@ import HomePage from '../pages/Home/Home';
 import MyLeagues from '../pages/Home/MyLeagues/LeaguesHome';
 import MyRoster from '../pages/Home/MyRoster/MyRoster';
 import DataPage from '../pages/Home/DataPage/DataPage';
+import ComponentShowcase from '../pages/Home/ComponentShowcase/ComponentShowcase';
 
 const AppRouter = () => {
     const { currentPage } = usePage();
@@ -20,6 +21,8 @@ const AppRouter = () => {
             return <MyRoster />
         case PageEnum.DATA:
             return <DataPage />
+        case PageEnum.COMPONENTSHOWCASE:
+            return <ComponentShowcase />;
         default:
             return <div>Page not found</div>;
     }

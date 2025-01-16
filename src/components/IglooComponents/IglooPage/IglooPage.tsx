@@ -22,6 +22,9 @@ const IglooPage: React.FC<PageProps> = ({ children }) => {
     const handleDataNav = () => {
         setPage(PageEnum.DATA)
     }
+    const handleComponentsNav = () => {
+        setPage(PageEnum.COMPONENTSHOWCASE)
+    }
     return (
         <div className="igloo-page-container">
             <header className="igloo-page-header">
@@ -36,9 +39,9 @@ const IglooPage: React.FC<PageProps> = ({ children }) => {
             <div className="igloo-page-wrapper">
                 <aside className="igloo-page-sidebar">
                         <IglooButton onClick={handleHomeNav}>Home</IglooButton>
-                        {/* <IglooButton onClick={handleLeaguesNav}>My Leagues</IglooButton> */}
                         <IglooButton onClick={handleRosterNav}>MyRoster</IglooButton>
                         <IglooButton onClick={handleDataNav}>Data</IglooButton>
+                        <IglooButton onClick={handleComponentsNav}>Components</IglooButton>
                 </aside>
                 <main className="igloo-page-content">
                     {children}
