@@ -54,6 +54,23 @@ h2 {
   text-align: center;
 }
 
+.loginPage {
+  background-color: var(--color-light);
+}
+
+.loginContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 8px 2px #bfbfbf;
+	padding: 15px;
+	align-items: center;
+	gap: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
 .tableContainer {
   display: flex;
   align-items: center;
