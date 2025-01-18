@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --color-black: #000000;
+  --color-dark: #3e3e3e;
+  --color-grey: #949494;
+  --color-light: #e6e6e6;
+  --color-white: #ffffff;
+  --color-warn: #c87d7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+button {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}
+
+.pageLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.tableContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+  min-width: 400px;
+  border-style: solid;
+}
+
+.tableContainer p {
+  flex-shrink: 1;
+  text-align: center;
+}

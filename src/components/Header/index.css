@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-light);
+    gap: 15px;
+    max-height: 100px;
+}
+
+.appTitle {
+    margin-left: 15px;
+    flex-grow: 1;
+}
